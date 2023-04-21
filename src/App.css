@@ -4,51 +4,31 @@
   margin-right: 2rem;
 }
 
-.App ul {
+.App li {
+  line-height: 1.75;
+}
+
+.App ul.nav {
   list-style-type: none;
 }
 
-.App textarea {
-  width: 100%;
-  min-height: 90px;
-  border: 1px solid #e3e3e3;
+.App code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #000;
+  font-weight: 600;
 }
 
-.App ul li {
+.App ul.nav li {
   display: inline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App ul.nav li::after {
+  content: " | ";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App ul.nav li:last-child::after {
+  content: "";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
